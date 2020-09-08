@@ -9,7 +9,7 @@ as a minimum, you should have the following installed
 _built using .NET Core 3
 
 ## Installation
-Just clone or fork this. Whatever you want. Restore client side libraries. Run the solution.
+Just clone or fork this. Whatever you want. [Restore client side libraries](https://github.com/moemura/AdminLTE.Core/issues/1). Run the solution.
 
 ## Features
 ### Controls are ViewComponent like a **UserControl**
