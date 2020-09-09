@@ -55,7 +55,7 @@ namespace AdminLTE.Common
                     {
                         Type = SidebarMenuType.Link,
                         Name = "Home",
-                        IconClassName = "fa fa-link",
+                        IconClassName = "fa fa-home",
                         URLPath = "/",
                         LinkCounter = counter,
                     };
@@ -64,7 +64,7 @@ namespace AdminLTE.Common
                     {
                         Type = SidebarMenuType.Link,
                         Name = "Login",
-                        IconClassName = "fa fa-sign-in",
+                        IconClassName = "fa fa-sign-in-alt",
                         URLPath = "/Account/Login",
                         LinkCounter = counter,
                     };
@@ -109,7 +109,7 @@ namespace AdminLTE.Common
                     {
                         Type = SidebarMenuType.Link,
                         Name = "User",
-                        IconClassName = "fa fa-link",
+                        IconClassName = "fa fa-users",
                         URLPath = "/SuperAdmin",
                         LinkCounter = counter,
                     };
@@ -118,7 +118,7 @@ namespace AdminLTE.Common
                     {
                         Type = SidebarMenuType.Link,
                         Name = "Role",
-                        IconClassName = "fa fa-link",
+                        IconClassName = "fa fa-user-tag",
                         URLPath = "/Role",
                         LinkCounter = counter,
                     };
@@ -127,7 +127,7 @@ namespace AdminLTE.Common
                     {
                         Type = SidebarMenuType.Link,
                         Name = "UserLogs",
-                        IconClassName = "fa fa-link",
+                        IconClassName = "fa fa-history",
                         URLPath = "/UserLogs",
                         LinkCounter = counter,
                     };
