@@ -16,6 +16,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <link rel="stylesheet" href="~/lib/ionicons/css/ionicons.css" />
         <link rel="stylesheet" href="~/lib/admin-lte/dist/css/AdminLTE.css" />
         <link rel="stylesheet" href="~/lib/admin-lte/dist/css/skins/skin-blue.css" />
+        <link rel="stylesheet" href="~/lib/datatables/css/dataTables.bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment names="Staging,Production">
@@ -24,6 +25,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <link rel="stylesheet" href="~/lib/ionicons/css/ionicons.min.css" asp-append-version="true" />
         <link rel="stylesheet" href="~/lib/admin-lte/dist/css/AdminLTE.min.css" asp-append-version="true" />
         <link rel="stylesheet" href="~/lib/admin-lte/dist/css/skins/skin-blue.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/lib/datatables/css/dataTables.bootstrap.min.css" asp-append-version="true" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 
@@ -32,6 +34,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <script src="~/lib/bootstrap/js/bootstrap.js" asp-append-version="true"></script>
         <script src="~/lib/admin-lte/dist/js/adminlte.js" asp-append-version="true"></script>
         <script src="~/lib/pace/pace.js" asp-append-version="true"></script>
+        <script src="~/lib/datatables/js/jquery.dataTables.js" asp-append-version="true"></script>
+        <script src="~/lib/datatables/js/dataTables.bootstrap.js" asp-append-version="true"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
     <environment names="Staging,Production">
@@ -39,6 +43,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <script src="~/lib/bootstrap/js/bootstrap.min.js" asp-append-version="true"></script>
         <script src="~/lib/admin-lte/dist/js/adminlte.min.js" asp-append-version="true"></script>
         <script src="~/lib/pace/pace.min.js" asp-append-version="true"></script>
+        <script src="~/lib/datatables/js/jquery.dataTables.min.js" asp-append-version="true"></script>
+        <script src="~/lib/datatables/js/dataTables.bootstrap.min.js" asp-append-version="true"></script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
 
@@ -103,7 +109,7 @@ desired effect
 
     @RenderSection("scripts", required: false)
     <script>
-        //useSubmitClass();
+        useSubmitClass();
         useDeleteConfirmation();
     </script>
 </body>

@@ -74,18 +74,13 @@ if (docCookies.hasItem("sidebarstate")) {
 //});
 
 /* automatically defaults all submit button to be disabled */
-/*
 function useSubmitClass() {
-    $("button[type=submit]").on('click', function (e) {
-        //var button = $("button[type=submit]");
-        $(this).prop("disabled", "disabled");
-        $(this).append(" <i class='fa fa-circle-o-notch fa-spin fa-fw'></i>");
+    $('form').submit(function () {
+        if ($(this).valid()) {
+            $(this).find(':submit').attr('disabled', 'disabled');
+        }
     });
-
-    $('form').bind('invalid-form.validate', function () {
-        $(this).find($('button[type=submit]')).prop("disabled", false).find($('i')).remove()
-    });
-}//*/
+}
 
 function useDeleteConfirmation() {
     $('.btn-delete').on("click", function (e) {
