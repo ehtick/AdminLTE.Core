@@ -60,7 +60,7 @@ namespace AdminLTE
                 config.Filters.Add(new AuthorizeFilter(policy));
             });
 
-            mvcBuilder.SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+            mvcBuilder.SetCompatibilityVersion(CompatibilityVersion.Latest);
 
             services.Configure<CookieAuthenticationOptions>(options =>
             {
@@ -70,6 +70,8 @@ namespace AdminLTE
             // Add application services.
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
+
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
