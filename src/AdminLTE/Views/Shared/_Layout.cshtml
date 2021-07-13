@@ -70,18 +70,26 @@ desired effect
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
-            <section class="content-header">
-                @await Component.InvokeAsync("PageHeader")
-                @await Component.InvokeAsync("Breadcrumb")
-                <br />
-                @await Component.InvokeAsync("PageAlert")
-            </section>
-            <!-- Main content -->
-            <section class="content">
-                <!-- Your Page Content Here -->
-                @RenderBody()
-            </section>
-            <!-- /.content -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            @await Component.InvokeAsync("PageHeader")
+                        </div>
+                        <div class="col-sm-6">
+                            @await Component.InvokeAsync("Breadcrumb")
+                        </div>
+                        <br />
+                        @await Component.InvokeAsync("PageAlert")
+                    </div>
+                </div>
+                <!-- Main content -->
+                <section class="content">
+                    <!-- Your Page Content Here -->
+                    @RenderBody()
+                </section>
+                <!-- /.content -->
+            </div>
         </div>
         <!-- /.content-wrapper -->
         <!-- Main Footer -->
@@ -91,9 +99,9 @@ desired effect
         <!-- /.control-sidebar -->
         <!-- Add the sidebar's background. This div must be placed
              immediately after the control sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-        <!-- Control sidebar content goes here -->
-    </aside>
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
     </div>
     <!-- ./wrapper -->
     <!-- Optionally, you can add Slimscroll and FastClick plugins.
