@@ -37,22 +37,25 @@
     {
       "library": "font-awesome@5.15.3",
       "destination": "wwwroot/lib/font-awesome/"
+    },
+    {
+      "library": "icheck-bootstrap@3.0.1",
+      "destination": "wwwroot/lib/icheck-bootstrap/"
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "admin-lte@3.1.0",
+      "destination": "wwwroot/lib/admin-lte/",
+      "files": [
+        "dist/css/adminlte.css",
+        "dist/css/adminlte.css.map",
+        "dist/css/adminlte.min.css",
+        "dist/js/adminlte.js",
+        "dist/js/adminlte.js.map",
+        "dist/js/adminlte.min.js",
+        "dist/js/adminlte.min.js.map",
+        "dist/img/AdminLTELogo.png"
+      ]
     }
-  ,
-{
-  "provider": "jsdelivr",
-  "library": "admin-lte@3.1.0",
-  "destination": "wwwroot/lib/admin-lte/",
-  "files": [
-    "dist/css/adminlte.css",
-    "dist/css/adminlte.css.map",
-    "dist/css/adminlte.min.css",
-    "dist/js/adminlte.js",
-    "dist/js/adminlte.js.map",
-    "dist/js/adminlte.min.js",
-    "dist/js/adminlte.min.js.map",
-    "dist/img/AdminLTELogo.png"
   ]
-}
-]
 }

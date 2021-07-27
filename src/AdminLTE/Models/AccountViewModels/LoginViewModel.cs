@@ -12,7 +12,7 @@ namespace AdminLTE.Models.AccountViewModels
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        [Display(Name = "Remember me?")]
+        [Display(Name = "Remember Me")]
         public bool RememberMe { get; set; }
     }
 }
