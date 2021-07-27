@@ -26,18 +26,26 @@ see below the body of **_Layouts.cshtml**
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
-            <section class="content-header">
-                @await Component.InvokeAsync("PageHeader")
-                @await Component.InvokeAsync("Breadcrumb")
-                <br />
-                @await Component.InvokeAsync("PageAlert")
-            </section>
-            <!-- Main content -->
-            <section class="content">
-                <!-- Your Page Content Here -->
-                @RenderBody()
-            </section>
-            <!-- /.content -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            @await Component.InvokeAsync("PageHeader")
+                        </div>
+                        <div class="col-sm-6">
+                            @await Component.InvokeAsync("Breadcrumb")
+                        </div>
+                        <br />
+                        @await Component.InvokeAsync("PageAlert")
+                    </div>
+                </div>
+                <!-- Main content -->
+                <section class="content">
+                    <!-- Your Page Content Here -->
+                    @RenderBody()
+                </section>
+                <!-- /.content -->
+            </div>
         </div>
         <!-- /.content-wrapper -->
         <!-- Main Footer -->
