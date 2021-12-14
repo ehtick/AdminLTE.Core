@@ -76,7 +76,7 @@
                             {
                                 var active = string.Empty;
                                 var menuopen = string.Empty;
-                                if (menu.TreeChild.Any(x => @Context.Request.Path.Value.Contains(x.URLPath)))
+                                if (menu.TreeChild.Any(x => @Context.Request.Path.Value.EndsWith(x.URLPath)))
                                 {
                                     active = "active";
                                     menuopen = "menu-open";
