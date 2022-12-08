@@ -60,8 +60,6 @@ namespace AdminLTE
                 config.Filters.Add(new AuthorizeFilter(policy));
             });
 
-            mvcBuilder.SetCompatibilityVersion(CompatibilityVersion.Latest);
-
             services.Configure<CookieAuthenticationOptions>(options =>
             {
                 options.LoginPath = new PathString("/Account/Login");
@@ -80,8 +78,6 @@ namespace AdminLTE
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
-                app.UseBrowserLink();
             }
             else
             {
