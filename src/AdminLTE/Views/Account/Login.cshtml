@@ -48,7 +48,7 @@
                 <form asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal">
                     
                     <div class="input-group mb-3">
-                        <input asp-for="Email" type="email" class="form-control" placeholder="Email" />
+                        <input asp-for="Email" type="email" class="form-control" placeholder="Email" autofocus />
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-envelope"></span>
