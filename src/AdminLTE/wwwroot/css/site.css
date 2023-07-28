@@ -1,7 +1,6 @@
 ﻿
 /*PACE.js Related*/
 .pace {
-  -webkit-pointer-events: none;
   pointer-events: none;
 
   -webkit-user-select: none;
