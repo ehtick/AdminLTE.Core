@@ -3,19 +3,19 @@
   "defaultProvider": "cdnjs",
   "libraries": [
     {
-      "library": "twitter-bootstrap@4.6.0",
+      "library": "twitter-bootstrap@4.6.2",
       "destination": "wwwroot/lib/bootstrap/"
     },
     {
-      "library": "jquery@3.6.0",
+      "library": "jquery@3.7.1",
       "destination": "wwwroot/lib/jquery/"
     },
     {
-      "library": "jquery-validate@1.19.0",
+      "library": "jquery-validate@1.20.0",
       "destination": "wwwroot/lib/jquery-validation/"
     },
     {
-      "library": "jquery-validation-unobtrusive@3.2.11",
+      "library": "jquery-validation-unobtrusive@4.0.0",
       "destination": "wwwroot/lib/jquery-validation-unobtrusive/"
     },
     {
@@ -23,11 +23,7 @@
       "destination": "wwwroot/lib/datatables/"
     },
     {
-      "library": "ionicons@4.5.5",
-      "destination": "wwwroot/lib/ionicons/"
-    },
-    {
-      "library": "pace@1.0.2",
+      "library": "pace@1.2.4",
       "destination": "wwwroot/lib/pace/"
     },
     {
@@ -35,7 +31,7 @@
       "destination": "wwwroot/lib/fastclick/"
     },
     {
-      "library": "font-awesome@5.15.3",
+      "library": "font-awesome@5.15.4",
       "destination": "wwwroot/lib/font-awesome/"
     },
     {
@@ -44,7 +40,7 @@
     },
     {
       "provider": "jsdelivr",
-      "library": "admin-lte@3.1.0",
+      "library": "admin-lte@3.2.0",
       "destination": "wwwroot/lib/admin-lte/",
       "files": [
         "dist/css/adminlte.css",
