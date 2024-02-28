@@ -7,18 +7,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 2 | Starter</title>
+    <title>AdminLTE v4 | Starter</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <environment names="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/lib/font-awesome/css/all.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap-icons/font/bootstrap-icons.css" />
         <link rel="stylesheet" href="~/lib/admin-lte/dist/css/adminlte.css" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment names="Staging,Production">
         <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" asp-append-version="true" />
-        <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/lib/bootstrap-icons/font/bootstrap-icons.min.css" asp-append-version="true" />
         <link rel="stylesheet" href="~/lib/admin-lte/dist/css/adminlte.min.css" asp-append-version="true" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
@@ -59,18 +59,18 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="hold-transition sidebar-mini">
-    <div class="wrapper">
+<body class="layout-fixed sidebar-expand-lg bg-body-tertiary app-loaded sidebar-open">
+    <div class="app-wrapper">
         <!-- Main Header -->
         @await Component.InvokeAsync("Header")
         <!-- Left side column. contains the logo and sidebar -->
         @await Component.InvokeAsync("Sidebar")
         <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
-            <div class="content-header">
+        <main class="app-main">
+            <!--begin::App Content Header-->
+            <div class="app-content-header">
                 <div class="container-fluid">
-                    <div class="row mb-2">
+                    <div class="row">
                         <div class="col-sm-6">
                             @await Component.InvokeAsync("PageHeader")
                         </div>
@@ -81,14 +81,14 @@ desired effect
                         @await Component.InvokeAsync("PageAlert")
                     </div>
                 </div>
-                <!-- Main content -->
-                <section class="content">
+                <!--begin::App Content-->
+                <div class="app-content">
                     <!-- Your Page Content Here -->
                     @RenderBody()
-                </section>
-                <!-- /.content -->
+                </div>
+                <!--end::App Content-->
             </div>
-        </div>
+        </main>
         <!-- /.content-wrapper -->
         <!-- Main Footer -->
         @await Component.InvokeAsync("Footer")

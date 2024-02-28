@@ -3,7 +3,7 @@
   "defaultProvider": "cdnjs",
   "libraries": [
     {
-      "library": "twitter-bootstrap@4.6.2",
+      "library": "twitter-bootstrap@5.3.3",
       "destination": "wwwroot/lib/bootstrap/"
     },
     {
@@ -31,8 +31,8 @@
       "destination": "wwwroot/lib/fastclick/"
     },
     {
-      "library": "font-awesome@5.15.4",
-      "destination": "wwwroot/lib/font-awesome/"
+      "library": "bootstrap-icons@1.11.3",
+      "destination": "wwwroot/lib/bootstrap-icons/"
     },
     {
       "library": "icheck-bootstrap@3.0.1",
@@ -40,7 +40,7 @@
     },
     {
       "provider": "jsdelivr",
-      "library": "admin-lte@3.2.0",
+      "library": "admin-lte@4.0.0-alpha3",
       "destination": "wwwroot/lib/admin-lte/",
       "files": [
         "dist/css/adminlte.css",
@@ -50,7 +50,7 @@
         "dist/js/adminlte.js.map",
         "dist/js/adminlte.min.js",
         "dist/js/adminlte.min.js.map",
-        "dist/img/AdminLTELogo.png"
+        "dist/assets/img/AdminLTELogo.png"
       ]
     }
   ]

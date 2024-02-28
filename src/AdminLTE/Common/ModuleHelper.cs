@@ -31,7 +31,7 @@ namespace AdminLTE.Common
             };
         }
 
-        public static SidebarMenu AddTree(string name, string iconClassName = "fa fa-link")
+        public static SidebarMenu AddTree(string name, string iconClassName = "bi bi-link")
         {
             return new SidebarMenu
             {
@@ -55,7 +55,7 @@ namespace AdminLTE.Common
                     {
                         Type = SidebarMenuType.Link,
                         Name = "Home",
-                        IconClassName = "fa fa-home",
+                        IconClassName = "bi bi-house-door-fill",
                         URLPath = "/",
                         LinkCounter = counter,
                     };
@@ -64,7 +64,7 @@ namespace AdminLTE.Common
                     {
                         Type = SidebarMenuType.Link,
                         Name = "Login",
-                        IconClassName = "fa fa-sign-in-alt",
+                        IconClassName = "bi bi-door-open-fill",
                         URLPath = "/Account/Login",
                         LinkCounter = counter,
                     };
@@ -73,7 +73,7 @@ namespace AdminLTE.Common
                     {
                         Type = SidebarMenuType.Link,
                         Name = "Register",
-                        IconClassName = "fa fa-user-plus",
+                        IconClassName = "bi bi-person-fill-add",
                         URLPath = "/Account/Register",
                         LinkCounter = counter,
                     };
@@ -82,7 +82,7 @@ namespace AdminLTE.Common
                     {
                         Type = SidebarMenuType.Link,
                         Name = "About",
-                        IconClassName = "fa fa-users",
+                        IconClassName = "bi bi-people-fill",
                         URLPath = "/Home/About",
                         LinkCounter = counter,
                     };
@@ -91,7 +91,7 @@ namespace AdminLTE.Common
                     {
                         Type = SidebarMenuType.Link,
                         Name = "Contact",
-                        IconClassName = "fa fa-phone",
+                        IconClassName = "bi bi-telephone-fill",
                         URLPath = "/Home/Contact",
                         LinkCounter = counter,
                     };
@@ -100,7 +100,7 @@ namespace AdminLTE.Common
                     {
                         Type = SidebarMenuType.Link,
                         Name = "Error",
-                        IconClassName = "fa fa-exclamation-triangle",
+                        IconClassName = "bi bi-exclamation-triangle-fill",
                         URLPath = "/Home/Error",
                         LinkCounter = counter,
                     };
@@ -109,7 +109,7 @@ namespace AdminLTE.Common
                     {
                         Type = SidebarMenuType.Link,
                         Name = "User",
-                        IconClassName = "fa fa-users",
+                        IconClassName = "bi bi-people-fill",
                         URLPath = "/SuperAdmin",
                         LinkCounter = counter,
                     };
@@ -118,7 +118,7 @@ namespace AdminLTE.Common
                     {
                         Type = SidebarMenuType.Link,
                         Name = "Role",
-                        IconClassName = "fa fa-user-tag",
+                        IconClassName = "bi bi-person-fill-gear",
                         URLPath = "/Role",
                         LinkCounter = counter,
                     };
@@ -127,7 +127,7 @@ namespace AdminLTE.Common
                     {
                         Type = SidebarMenuType.Link,
                         Name = "UserLogs",
-                        IconClassName = "fa fa-history",
+                        IconClassName = "bi bi-clock-history",
                         URLPath = "/UserLogs",
                         LinkCounter = counter,
                     };

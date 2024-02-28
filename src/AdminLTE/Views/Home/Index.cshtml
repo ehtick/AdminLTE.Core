@@ -54,18 +54,18 @@
                 { "defaultContent": "<button class='btn btn-primary btn-sm'>Details</button>", "targets": [7] },
                 { "searchable": false, "targets": [0,2,4,5,6] },
                 { "render": function (data, type, row) {
-                            return ' <label class="badge label-primary">' + data + '</label>';},
+                            return ' <label class="badge text-bg-primary">' + data + '</label>';},
                   "targets": [4] },
                 { "render": function (data, type, row) {
                         if (row['quantity'] > 1)
-                            return ' <label class="badge label-success">' + row['quantity'] + '</label>'
+                            return ' <label class="badge text-bg-success">' + row['quantity'] + '</label>'
                         else
-                            return ' <label class="badge label-default">' + row['quantity'] + '</label>';},
+                            return ' <label class="badge text-bg-secondary">' + row['quantity'] + '</label>';},
                    "targets": [2]},
             ],
             "language":
                 {
-                    "processing": "<div class=''><i class='fa fa-cog fa-spin site-loader-color'></i></div>",
+                    "processing": "<div class=''><i class='bi bi-gear site-loader-color'></i></div>",
                     "search": "filter",
                     "searchPlaceholder": "track num or product"
                 },
@@ -89,7 +89,7 @@
             "dom": "<'row'<'col-sm-6'l><'col-sm-6'<'#buttonContainer.site-datatable-button-container'>f>>" + "<'row'<'col-sm-12'tr>>" + "<'row'<'col-sm-5'i><'col-sm-7'p>>",
         });
         
-        $("#buttonContainer").addClass("float-right").append("<button class='btn btn-sm bg-success'>Create</button>");
+        $("#buttonContainer").addClass("float-end").append("<button class='btn btn-sm bg-success'>Create</button>");
 
     });
 </script>

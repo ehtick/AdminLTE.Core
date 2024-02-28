@@ -38,7 +38,6 @@ namespace AdminLTE.Controllers
         [HelpDefinition("helpdefault")]
         public IActionResult Contact()
         {
-            AddBreadcrumb("Register", "/Account/Register");
             AddBreadcrumb("Contact", "/Account/Contact");
             ViewData["Message"] = "Your contact page.";
 

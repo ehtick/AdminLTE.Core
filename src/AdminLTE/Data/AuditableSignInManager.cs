@@ -9,6 +9,7 @@ using System;
 using System.Threading.Tasks;
 using AdminLTE.Common;
 using AdminLTE.Common.Extensions;
+using Microsoft.AspNetCore.Authentication;
 
 namespace AdminLTE.Data
 {
@@ -70,7 +71,7 @@ namespace AdminLTE.Data
 
         public override async Task SignOutAsync()
         {
-            await base.SignOutAsync();
+            await _contextAccessor.HttpContext.SignOutAsync(IdentityConstants.ApplicationScheme);
 
             var user = await _userManager.FindByIdAsync(_userManager.GetUserId(_contextAccessor.HttpContext.User)) as IdentityUser;
 
