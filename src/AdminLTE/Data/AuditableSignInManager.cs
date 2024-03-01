@@ -71,7 +71,7 @@ namespace AdminLTE.Data
 
         public override async Task SignOutAsync()
         {
-            await _contextAccessor.HttpContext.SignOutAsync(IdentityConstants.ApplicationScheme);
+            await _contextAccessor.HttpContext.SignOutAsync(_contextAccessor.HttpContext.Features.Get<IAuthenticateResultFeature>().AuthenticateResult?.Ticket?.AuthenticationScheme);
 
             var user = await _userManager.FindByIdAsync(_userManager.GetUserId(_contextAccessor.HttpContext.User)) as IdentityUser;
 
