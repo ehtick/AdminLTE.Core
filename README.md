@@ -1,12 +1,12 @@
-# **Admin**LTE - MVC Core 3
+# **Admin**LTE - MVC Core
 This template is based from AdminLTE of http://almsaeedstudio.com.
 Converted as a .Net project.
 
 ## Prerequisites
 as a minimum, you should have the following installed
-* Visual Studio 2019
+* Visual Studio 2022+
 
-_built using .NET Core 3
+_built using .NET
 
 ## Installation
 Just clone or fork this. Whatever you want. [Restore client side libraries](https://github.com/moemura/AdminLTE.Core/issues/1). Run the solution.

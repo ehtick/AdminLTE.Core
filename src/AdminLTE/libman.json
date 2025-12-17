@@ -3,7 +3,7 @@
   "defaultProvider": "cdnjs",
   "libraries": [
     {
-      "library": "twitter-bootstrap@5.3.3",
+      "library": "twitter-bootstrap@5.3.8",
       "destination": "wwwroot/lib/bootstrap/"
     },
     {
@@ -19,11 +19,11 @@
       "destination": "wwwroot/lib/jquery-validation-unobtrusive/"
     },
     {
-      "library": "datatables.net@2.2.1",
+      "library": "datatables.net@2.3.4",
       "destination": "wwwroot/lib/datatables/"
     },
     {
-      "library": "datatables.net-bs5@2.2.1",
+      "library": "datatables.net-bs5@2.3.4",
       "destination": "wwwroot/lib/datatables-bs/"
     },
     {
@@ -35,7 +35,7 @@
       "destination": "wwwroot/lib/fastclick/"
     },
     {
-      "library": "bootstrap-icons@1.11.3",
+      "library": "bootstrap-icons@1.13.1",
       "destination": "wwwroot/lib/bootstrap-icons/"
     },
     {
@@ -44,7 +44,7 @@
     },
     {
       "provider": "jsdelivr",
-      "library": "admin-lte@4.0.0-beta3",
+      "library": "admin-lte@4.0.0-rc6",
       "destination": "wwwroot/lib/admin-lte/",
       "files": [
         "dist/css/adminlte.css",
